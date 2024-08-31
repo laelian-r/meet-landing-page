@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* BACKGROUND */
+  --background-color: #FAFAFA;
+
+  /* BASIC COLOR */
+  --primary-color: #4D96A9;
+  --secondary-color: #855FB1;
+
+  /* TEXT */
+  --primary-text-color: #28283D;
+  --secondary-text-color: #87879D;
+  --accent-text-color: #8FE3F9;
+  --button-2-span-color: #D9B8FF;
+
+  /* HOVER */
+  --hover-button-1-color: #71C0D4;
+  --hover-button-2-color: #B18BDD;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.txt-btn-header {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-header {
+  display: none;
+}
+
+.logo {
+  margin: 3rem 0 1rem 0;
+}
+
+.header-img-container {
+  width: 100%;
+}
+
+.header-img {
+  /* height: 10.6rem; */
+  width: 100%;
+  margin: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-text-color);
+}
+
+p {
+  text-align: center;
+  margin: 2rem;
+  color: var(--secondary-text-color);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 4rem;
+}
+
+.download-button {
+  padding: 1.3rem 3rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.what-is-it-button {
+  padding: 1.3rem 2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+span {
+  color: var(--accent-text-color);
+}
+
+h3 {
+  color: var(--secondary-text-color);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.etape-01-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.line {
+  opacity: 30%;
+}
+
+.h3-border {
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  height: 3rem;
+  width: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.built-for-modern-use {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+h2 {
+  margin: 0rem 2rem 0rem 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: var(--primary-text-color);
+}
+
+.etape-02-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  z-index: 1;
+  position: relative;
+  top: 2rem;
+}
+
+.h3-border {
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  height: 3rem;
+  width: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: var(--background-color);
+}
+
+footer {
+  background-image: url('/public/assets/mobile-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-download-button {
+  padding: 1.3rem 3rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-download-button span {
+  color: var(--button-2-span-color);
+}
+
+@media (min-width: 768px) {
+  p {
+    margin: 2rem 10rem;
+  }
+
+  .main-p {
+    margin: 2rem 6rem 0 6rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .download-button {
+    padding: 1.3rem 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .what-is-it-button {
+    padding: 1.3rem 2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  footer {
+    background-image: url('/public/assets/tablet-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  footer h3 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 4rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  header {
+    width: 100%;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download-button {
+    padding: 1.3rem 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .download-button:hover {
+    cursor: pointer;
+    background-color: var(--hover-button-1-color);
+    transition: 0.3s;
+  }
+  
+  .what-is-it-button {
+    padding: 1.3rem 2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .img-section img {
+    height: 10rem;
+  }
+
+  main h2 {
+    margin: 0 4rem;
+  }
+
+  .footer-download-button {
+    padding: 1.3rem 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .what-is-it-button:hover {
+    cursor: pointer;
+    background-color: var(--hover-button-2-color);
+    transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  footer {
+    background-image: url('/public/assets/desktop-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 7rem 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center;
+    gap: 2rem; */
+  }
+
+  footer h3 {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  footer p {
+    text-align: start;
+    font-size: 1rem;
+    width: 19rem;
+  }
+
+  .footer-download-button {
+    padding: 1.3rem 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .footer-download-button:hover {
+    cursor: pointer;
+    background-color: var(--hover-button-2-color);
+    transition: 0.3s;
+  }
+}
